@@ -1,9 +1,14 @@
 public class Boleto {
-    double valor;
+    private double valor;
     String codigodebarras;
     String vencimento;
-    public void emitirBoleto(){
-        System.out.println("Emitindo novo boleto:" + valor +"," + vencimento + "," + codigodebarras); 
+    public void emitirBoleto( double valor,
+    String codigodebarras,
+    String vencimento){
+        System.out.println("Emitindo novo boleto:" + valor +"," + vencimento + "," + codigodebarras);
+        variavelBoleto.valor = valor;
+        variavelBoleto.vencimento = vencimento;
+        variavelBoleto.codigodebarras = codigodebarras ;
     }
        
     public void cancelarBoleto(){}
